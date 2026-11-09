@@ -1,0 +1,47 @@
+/* GymFlow Main App Container */
+.gymflow-app {
+  min-height: 100vh;
+  width: 100%;
+  background: #0d0d18;
+  color: #e2e8f0;
+  display: flex;
+  flex-direction: column;
+}
+
+.gymflow-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Chat view wrapper */
+.chat-view-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Scrollbar global */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0d18;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #22223a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00b4d8;
+}

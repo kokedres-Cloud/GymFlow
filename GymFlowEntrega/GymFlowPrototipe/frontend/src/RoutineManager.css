@@ -1,0 +1,482 @@
+/* Routine Manager Styles */
+.routine-container {
+  max-width: 1200px;
+  margin: 1.5rem auto;
+  padding: 0 1.5rem 3rem;
+  width: 100%;
+}
+
+.routine-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.routine-header h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 0.4rem 0;
+}
+
+.routine-header p {
+  color: #8899aa;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.create-routine-btn {
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  border: none;
+  color: #ffffff;
+  padding: 0.65rem 1.25rem;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 10px rgba(0, 180, 216, 0.3);
+}
+
+.create-routine-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 18px rgba(0, 180, 216, 0.45);
+}
+
+/* Prompt state when not logged in */
+.routine-auth-prompt {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #141424;
+  border: 1px solid #282845;
+  border-radius: 20px;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.prompt-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.routine-auth-prompt h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin: 0 0 0.8rem 0;
+}
+
+.routine-auth-prompt p {
+  color: #8899aa;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.prompt-btn {
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  border: none;
+  color: #ffffff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 180, 216, 0.3);
+}
+
+/* Form Card */
+.routine-form-card {
+  background: #141424;
+  border: 1px solid #282845;
+  border-radius: 20px;
+  padding: 1.8rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.routine-form-card h3 {
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin: 0 0 1.2rem 0;
+}
+
+.form-error-banner {
+  background: rgba(230, 57, 70, 0.15);
+  border: 1px solid rgba(230, 57, 70, 0.5);
+  color: #ff6b6b;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.2rem;
+  font-size: 0.88rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-field label {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  font-weight: 600;
+}
+
+.form-field input {
+  background: #1c1c30;
+  border: 1px solid #2e2e50;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  color: #ffffff;
+  outline: none;
+}
+
+.form-field input:focus {
+  border-color: #00b4d8;
+}
+
+.form-section {
+  margin-bottom: 1.5rem;
+}
+
+.section-label {
+  display: block;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.days-selector {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.day-chip {
+  background: #1c1c30;
+  border: 1px solid #2e2e50;
+  color: #94a3b8;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.day-chip.selected {
+  background: #00b4d8;
+  color: #0d0d18;
+  border-color: #00b4d8;
+}
+
+/* Add Exercise Bar */
+.add-exercise-bar {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  background: #19192e;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #252542;
+}
+
+.add-exercise-bar select {
+  flex: 2;
+  min-width: 200px;
+  background: #121222;
+  border: 1px solid #2e2e50;
+  color: #ffffff;
+  padding: 0.65rem 0.8rem;
+  border-radius: 8px;
+  outline: none;
+}
+
+.number-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  width: 90px;
+}
+
+.number-input label {
+  font-size: 0.72rem;
+  color: #94a3b8;
+}
+
+.number-input input {
+  background: #121222;
+  border: 1px solid #2e2e50;
+  color: #ffffff;
+  padding: 0.65rem 0.5rem;
+  border-radius: 8px;
+  text-align: center;
+  outline: none;
+}
+
+.add-item-btn {
+  background: #00b4d8;
+  color: #0c0c18;
+  border: none;
+  padding: 0.65rem 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  height: 38px;
+}
+
+/* Added list */
+.added-exercises-list {
+  margin: 1.2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.added-exercises-list h4 {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.added-exercise-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #18182b;
+  border: 1px solid #282845;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+}
+
+.item-name {
+  font-weight: 700;
+  color: #ffffff;
+  margin-right: 0.6rem;
+}
+
+.item-badge {
+  background: rgba(0, 180, 216, 0.15);
+  color: #00b4d8;
+  font-size: 0.72rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-right: 0.8rem;
+}
+
+.item-details {
+  font-size: 0.82rem;
+  color: #94a3b8;
+}
+
+.delete-item-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.delete-item-btn:hover {
+  opacity: 1;
+}
+
+.form-submit-actions {
+  margin-top: 1.5rem;
+  text-align: right;
+}
+
+.save-routine-btn {
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  border: none;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.92rem;
+  cursor: pointer;
+}
+
+/* Routines Grid */
+.routines-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.routine-card {
+  background: #141424;
+  border: 1px solid #25253d;
+  border-radius: 18px;
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.routine-card:hover {
+  transform: translateY(-3px);
+  border-color: #00b4d8;
+}
+
+.routine-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.routine-card-header h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 700;
+}
+
+.card-delete-btn {
+  background: transparent;
+  border: none;
+  color: #8899aa;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.card-delete-btn:hover {
+  color: #ff6b6b;
+}
+
+.routine-desc {
+  font-size: 0.85rem;
+  color: #8899aa;
+  margin: 0 0 1rem 0;
+}
+
+.routine-days {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.routine-day-badge {
+  background: rgba(0, 180, 216, 0.15);
+  color: #00b4d8;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.routine-exercises {
+  flex: 1;
+  background: #19192e;
+  border-radius: 10px;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.routine-exercises h4 {
+  font-size: 0.8rem;
+  color: #cbd5e1;
+  margin: 0 0 0.5rem 0;
+}
+
+.exercise-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.82rem;
+  color: #94a3b8;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.bullet {
+  color: #00b4d8;
+  margin-right: 0.3rem;
+}
+
+.no-exercises-text {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.routine-card-footer {
+  margin-top: auto;
+}
+
+.ask-routine-btn {
+  width: 100%;
+  background: #1c1c30;
+  border: 1px solid #303050;
+  color: #00b4d8;
+  padding: 0.6rem;
+  border-radius: 10px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ask-routine-btn:hover {
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  color: #ffffff;
+  border-color: transparent;
+}
+
+/* Loading & Empty states */
+.routine-loading,
+.routine-empty {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: #141424;
+  border-radius: 16px;
+  border: 1px solid #25253d;
+}
+
+.routine-loading .spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(0, 180, 216, 0.2);
+  border-top-color: #00b4d8;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+.routine-empty .empty-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.routine-empty h3 {
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+}
+
+.routine-empty p {
+  color: #8899aa;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

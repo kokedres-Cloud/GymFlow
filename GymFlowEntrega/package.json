@@ -1,0 +1,12 @@
+{
+  "name": "gymflow-prototype",
+  "version": "1.0.0",
+  "description": "GymFlow AI Fitness Prototype",
+  "scripts": {
+    "backend": "npm --prefix GymFlowProtipe/backend run dev",
+    "frontend": "npm --prefix GymFlowProtipe/frontend run dev",
+    "seed": "npm --prefix GymFlowProtipe/backend run seed",
+    "build": "npm --prefix GymFlowProtipe/frontend run build"
+  }
+}
+
